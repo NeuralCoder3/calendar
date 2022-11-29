@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .App-logo {
@@ -32,7 +35,43 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.inactive {
+  background-color: white;
+}
+
+.future {
+  background-color: lightblue;
+}
+
+.past {
+  background-color: gray;
+}
+
+.date {
+  color: darkgray;
+  min-width: 5px;
+  min-height: 5px;
+}
+
+.month {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.calendar {
+  width: fit-content;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; */
 }
